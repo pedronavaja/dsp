@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> VIM IS SO WEIRD BUT I KIND OF LOVE IT. Will probably end up using emacs a lot, though, because it makes the most intuitive sense. Once I get the hang of vim, I will probably use it more. 
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I have been using Atom for a while, and will stick with that for now. I don't have it customized in any way, but I could do so using the stylesheet if I wanted. 
 
  
