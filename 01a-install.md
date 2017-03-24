@@ -48,13 +48,13 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> From a previous version of anaconda (installed a few years ago), I already had python 2.7 installed. I also added python 3 using conda in case I needed it, but most of the work I've done so far has used python 2.7. 
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> On a mac, I would enter 'python --version' from the bash prompt. On a windows machine I could also use 'python -V'
 
  
 
