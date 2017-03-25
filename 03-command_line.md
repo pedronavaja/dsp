@@ -42,8 +42,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
+<<<<<<< HEAD
 > > ls: lists files \
 ls -a: lists all files \
+=======
+> > ls: lists files
+> > ls -a: lists all files
+>>>>>>> 4abfe0a38b5e6bfb87feaa9ee30bdb581fbb56c4
 ls -l: lists files in "long listing format" 
 ls -lh: same, but supposedly in a human readable format or something? In terms of print size? 
 ls -lah: lists all files in long listing format in human readable format
