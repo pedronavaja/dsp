@@ -18,6 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count < 10: 
+        return 'Number of donuts: %s' %count
+    if count > 9: 
+        return 'Number of donuts: many'
     raise NotImplementedError
 
 
@@ -37,6 +41,14 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s) > 2:
+        head = s[0:2]
+        tail = s[len(s)-2:]
+        return head + tail 
+    else:
+        return ''
+
+
     raise NotImplementedError
 
 
@@ -56,6 +68,16 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+
+    new_s = ''
+    new_s += s[0]
+    for i in range(1, len(s)):
+        if s[i] == s[0]:
+            new_s += '*'
+        else:
+            new_s += s[i]
+    return new_s 
+    
     raise NotImplementedError
 
 
@@ -74,6 +96,17 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    new_a = ''
+    new_b = ''
+    new_a += b[0:2]
+    new_b += a[0:2]
+    for i in range (2, len(a)):
+        new_a += a[i]
+    for i in range (2, len(b)):
+        new_b += b[i]
+    mixed_s = new_a + '' + new_b
+    return mixed_s
+
     raise NotImplementedError
 
 
@@ -91,6 +124,16 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    new_s = ''
+    if len(s) > 3:
+        if s[len(s)-3:] == 'ing':
+            new_s += s + 'ly'
+        else: 
+            new_s += s + 'ing'
+    else: 
+        new_s = s
+    return new_s
+
     raise NotImplementedError
 
 
@@ -111,6 +154,21 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    words = s.split()
+    delimiter = ' '
+    if 'not' and 'bad' in words:
+        not_pos = words.index('not')
+        bad_pos = words.index('bad')
+        if not_pos < bad_pos:
+            del words[words.index('not'):words.index('bad')+1]
+            words.append('good')
+            new_string = delimiter.join(words)
+            return new_string
+        else:
+            return s
+    else:
+        return s
+    
     raise NotImplementedError
 
 
